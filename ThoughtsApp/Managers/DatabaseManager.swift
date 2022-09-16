@@ -35,7 +35,8 @@ final class DatabaseManager {
             .collection("users")
             .document(userEmail)
             .collection("posts")
-            .addDocument(data: data) { error in
+            .document(blogPost.identifier)
+            .setData(data) { error in
                 completion(error == nil)
             }
     }
