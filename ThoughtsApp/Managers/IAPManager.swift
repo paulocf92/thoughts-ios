@@ -117,6 +117,10 @@ final class IAPManager {
 
 extension IAPManager {
     var canViewPost: Bool {
+        if isPremium() {
+            return true
+        }
+        
         guard let date = postEligibleViewDate else {
             return true
         }
