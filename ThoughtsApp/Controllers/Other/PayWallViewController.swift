@@ -58,7 +58,6 @@ class PayWallViewController: UIViewController {
         view.addSubview(heroView)
         setUpCloseButton()
         setUpButtons()
-        heroView.backgroundColor = .systemYellow
     }
     
     override func viewDidLayoutSubviews() {
