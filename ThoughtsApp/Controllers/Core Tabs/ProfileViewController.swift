@@ -77,6 +77,8 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
             width: view.width/4,
             height: view.width/4
         )
+        profilePhoto.layer.masksToBounds = true
+        profilePhoto.layer.cornerRadius = profilePhoto.width/2
         profilePhoto.isUserInteractionEnabled = true
         headerView.addSubview(profilePhoto)
         
