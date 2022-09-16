@@ -93,6 +93,8 @@ class SignInViewController: UITabBarController {
             return
         }
         
+        HapticsManager.shared.vibrateForSelection()
+        
         AuthManager.shared.signIn(email: email, password: password) { [weak self] success in
             guard success else {
                 return
