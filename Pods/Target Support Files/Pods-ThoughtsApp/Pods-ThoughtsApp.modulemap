@@ -1,0 +1,6 @@
+framework module Pods_ThoughtsApp {
+  umbrella header "Pods-ThoughtsApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
