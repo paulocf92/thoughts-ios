@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3CF76D1A93D211467AA6D796 /* Pods_ThoughtsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8659193EFFC8F091C9907621 /* Pods_ThoughtsApp.framework */; };
 		AC4E07EC28B84845003757EB /* PayWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E07EB28B84845003757EB /* PayWallViewController.swift */; };
+		AC4E07EE28B84DEE003757EB /* Configuration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = AC4E07ED28B84DEE003757EB /* Configuration.storekit */; };
 		AC616C1128B4203000F004F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C1028B4203000F004F4 /* AppDelegate.swift */; };
 		AC616C1328B4203000F004F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C1228B4203000F004F4 /* SceneDelegate.swift */; };
 		AC616C1528B4203000F004F4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C1428B4203000F004F4 /* HomeViewController.swift */; };
@@ -35,6 +36,7 @@
 		2A8B2F1C65B4E9062ACEFABB /* Pods-ThoughtsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThoughtsApp.debug.xcconfig"; path = "Target Support Files/Pods-ThoughtsApp/Pods-ThoughtsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8659193EFFC8F091C9907621 /* Pods_ThoughtsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThoughtsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4E07EB28B84845003757EB /* PayWallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallViewController.swift; sourceTree = "<group>"; };
+		AC4E07ED28B84DEE003757EB /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 		AC616C0D28B4203000F004F4 /* ThoughtsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThoughtsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC616C1028B4203000F004F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC616C1228B4203000F004F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			children = (
 				AC616C1428B4203000F004F4 /* HomeViewController.swift */,
 				AC616C2C28B516D100F004F4 /* ProfileViewController.swift */,
+				AC4E07ED28B84DEE003757EB /* Configuration.storekit */,
 				AC616C2E28B5172C00F004F4 /* TabBarViewController.swift */,
 			);
 			path = "Core Tabs";
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC616C1D28B4203100F004F4 /* LaunchScreen.storyboard in Resources */,
+				AC4E07EE28B84DEE003757EB /* Configuration.storekit in Resources */,
 				AC616C1A28B4203100F004F4 /* Assets.xcassets in Resources */,
 				ACB44A3E28B651EA00BAB3E0 /* GoogleService-Info.plist in Resources */,
 			);
