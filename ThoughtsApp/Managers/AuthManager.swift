@@ -24,7 +24,20 @@ final class AuthManager {
         password: String,
         completion: @escaping (Bool) -> Void
     ) {
+        guard !email.trimmingCharacters(in: .whitespaces).isEmpty,
+              !password.trimmingCharacters(in: .whitespaces).isEmpty,
+              password.count >= 6 else {
+            return
+        }
         
+        auth.createUser(withEmail: email, password: password) { result, error in
+            guard result != nil, error == nil else {
+                completion(false)
+                return
+            }
+            
+            completion(true)
+        }
         
     }
     
@@ -33,7 +46,20 @@ final class AuthManager {
         password: String,
         completion: @escaping (Bool) -> Void
     ) {
+        guard !email.trimmingCharacters(in: .whitespaces).isEmpty,
+              !password.trimmingCharacters(in: .whitespaces).isEmpty,
+              password.count >= 6 else {
+            return
+        }
         
+        auth.signIn(withEmail: email, password: password) { result, error in
+            guard result != nil, error == nil else {
+                completion(false)
+                return
+            }
+            
+            completion(true)
+        }
         
     }
     
