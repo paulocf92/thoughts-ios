@@ -10,6 +10,7 @@ import UIKit
 class SignInViewController: UITabBarController {
     
     // Header View
+    private let headerView = SignInHeaderView()
     
     // Email field
     
@@ -23,8 +24,12 @@ class SignInViewController: UITabBarController {
         super.viewDidLoad()
         title = "Sign In"
         view.backgroundColor = .systemBackground
-        
-        
+        view.addSubview(headerView)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        headerView.frame = CGRect(x: 0, y: view.safeAreaInsets.top, width: view.width, height: view.height/5)
     }
 
 }
