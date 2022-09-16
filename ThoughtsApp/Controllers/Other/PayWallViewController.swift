@@ -10,6 +10,7 @@ import UIKit
 class PayWallViewController: UIViewController {
     
     private let header = PayWallHeaderView()
+    private let heroView = PayWallDescriptionView()
     
     // Pricing and product info
     // CTA Buttons
@@ -54,8 +55,10 @@ class PayWallViewController: UIViewController {
         view.addSubview(buyButton)
         view.addSubview(restoreButton)
         view.addSubview(termsView)
+        view.addSubview(heroView)
         setUpCloseButton()
         setUpButtons()
+        heroView.backgroundColor = .systemYellow
     }
     
     override func viewDidLayoutSubviews() {
@@ -86,6 +89,13 @@ class PayWallViewController: UIViewController {
             y: restoreButton.top - 60,
             width: view.width - 50,
             height: 50
+        )
+        
+        heroView.frame = CGRect(
+            x: 0,
+            y: header.bottom,
+            width: view.width,
+            height: buyButton.top - view.safeAreaInsets.top - header.height
         )
     }
     
