@@ -24,6 +24,7 @@
 		AC616C3B28B5182500F004F4 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C3A28B5182500F004F4 /* DatabaseManager.swift */; };
 		AC616C3D28B5184900F004F4 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C3C28B5184900F004F4 /* AuthManager.swift */; };
 		AC616C3F28B5187300F004F4 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C3E28B5187300F004F4 /* StorageManager.swift */; };
+		ACB44A3E28B651EA00BAB3E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACB44A3D28B651EA00BAB3E0 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		AC616C3A28B5182500F004F4 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		AC616C3C28B5184900F004F4 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		AC616C3E28B5187300F004F4 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		ACB44A3D28B651EA00BAB3E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +71,6 @@
 				2A8B2F1C65B4E9062ACEFABB /* Pods-ThoughtsApp.debug.xcconfig */,
 				05B846B72983649A1C97E514 /* Pods-ThoughtsApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -142,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				AC616C1928B4203100F004F4 /* Assets.xcassets */,
+				ACB44A3D28B651EA00BAB3E0 /* GoogleService-Info.plist */,
 				AC616C1028B4203000F004F4 /* AppDelegate.swift */,
 				AC616C1228B4203000F004F4 /* SceneDelegate.swift */,
 			);
@@ -249,6 +251,7 @@
 			files = (
 				AC616C1D28B4203100F004F4 /* LaunchScreen.storyboard in Resources */,
 				AC616C1A28B4203100F004F4 /* Assets.xcassets in Resources */,
+				ACB44A3E28B651EA00BAB3E0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

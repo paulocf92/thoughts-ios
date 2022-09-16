@@ -13,21 +13,21 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="eu5-YS-DDh">
-                                <rect key="frame" x="107" y="348" width="200" height="200"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="eu5-YS-DDh">
+                                <rect key="frame" x="107" y="156" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="6Rv-uA-p1B"/>
                                     <constraint firstAttribute="width" constant="200" id="alC-Ko-Her"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="THOUGHTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mou-0y-9Lp">
-                                <rect key="frame" x="20" y="585" width="374" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THOUGHTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mou-0y-9Lp">
+                                <rect key="frame" x="20" y="376" width="374" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="FOx-Ad-7zo"/>
+                                    <constraint firstAttribute="height" constant="100" id="Sct-fj-fY5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" systemColor="systemPinkColor"/>
@@ -39,10 +39,19 @@
                         <constraints>
                             <constraint firstItem="mou-0y-9Lp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4ld-7V-4DV"/>
                             <constraint firstItem="mou-0y-9Lp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5hh-ra-z3h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mou-0y-9Lp" secondAttribute="bottom" constant="2" id="DBL-fa-4p2"/>
+                            <constraint firstItem="mou-0y-9Lp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="NAh-4s-y2A"/>
+                            <constraint firstItem="mou-0y-9Lp" firstAttribute="top" secondItem="eu5-YS-DDh" secondAttribute="bottom" constant="20" id="T1E-vS-7k6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mou-0y-9Lp" secondAttribute="bottom" constant="2" id="U5O-yf-1Vf"/>
+                            <constraint firstItem="mou-0y-9Lp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="aur-rQ-iRj"/>
                             <constraint firstItem="eu5-YS-DDh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="dtF-6F-cLE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mou-0y-9Lp" secondAttribute="trailing" constant="20" id="f3M-M4-mZ0"/>
+                            <constraint firstItem="mou-0y-9Lp" firstAttribute="top" secondItem="eu5-YS-DDh" secondAttribute="bottom" constant="20" id="hLB-g0-McI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mou-0y-9Lp" secondAttribute="trailing" constant="20" id="ih1-fU-3QA"/>
                             <constraint firstItem="eu5-YS-DDh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jav-fr-3J8"/>
+                            <constraint firstItem="eu5-YS-DDh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nEQ-p5-qNg"/>
+                            <constraint firstItem="eu5-YS-DDh" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="oSS-ya-gmD"/>
+                            <constraint firstItem="mou-0y-9Lp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="qVK-cO-npr"/>
                             <constraint firstItem="mou-0y-9Lp" firstAttribute="top" secondItem="eu5-YS-DDh" secondAttribute="bottom" constant="30" id="yfh-ab-eWE"/>
                         </constraints>
                     </view>
