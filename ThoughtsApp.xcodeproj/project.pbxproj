@@ -10,6 +10,8 @@
 		3CF76D1A93D211467AA6D796 /* Pods_ThoughtsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8659193EFFC8F091C9907621 /* Pods_ThoughtsApp.framework */; };
 		AC4E07EC28B84845003757EB /* PayWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E07EB28B84845003757EB /* PayWallViewController.swift */; };
 		AC4E07EE28B84DEE003757EB /* Configuration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = AC4E07ED28B84DEE003757EB /* Configuration.storekit */; };
+		AC4E07F028B853AE003757EB /* PayWallHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E07EF28B853AE003757EB /* PayWallHeaderView.swift */; };
+		AC4E07F228B8557B003757EB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E07F128B8557B003757EB /* Extensions.swift */; };
 		AC616C1128B4203000F004F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C1028B4203000F004F4 /* AppDelegate.swift */; };
 		AC616C1328B4203000F004F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C1228B4203000F004F4 /* SceneDelegate.swift */; };
 		AC616C1528B4203000F004F4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C1428B4203000F004F4 /* HomeViewController.swift */; };
@@ -37,6 +39,8 @@
 		8659193EFFC8F091C9907621 /* Pods_ThoughtsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThoughtsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4E07EB28B84845003757EB /* PayWallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallViewController.swift; sourceTree = "<group>"; };
 		AC4E07ED28B84DEE003757EB /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		AC4E07EF28B853AE003757EB /* PayWallHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallHeaderView.swift; sourceTree = "<group>"; };
+		AC4E07F128B8557B003757EB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		AC616C0D28B4203000F004F4 /* ThoughtsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThoughtsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC616C1028B4203000F004F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC616C1228B4203000F004F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				AC616C1B28B4203100F004F4 /* LaunchScreen.storyboard */,
+				AC4E07EF28B853AE003757EB /* PayWallHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				AC616C1928B4203100F004F4 /* Assets.xcassets */,
+				AC4E07F128B8557B003757EB /* Extensions.swift */,
 				ACB44A3D28B651EA00BAB3E0 /* GoogleService-Info.plist */,
 				AC616C1028B4203000F004F4 /* AppDelegate.swift */,
 				AC616C1228B4203000F004F4 /* SceneDelegate.swift */,
@@ -326,10 +332,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACB44A4228B69A4E00BAB3E0 /* BlogPost.swift in Sources */,
+				AC4E07F228B8557B003757EB /* Extensions.swift in Sources */,
 				AC616C1528B4203000F004F4 /* HomeViewController.swift in Sources */,
 				AC616C3D28B5184900F004F4 /* AuthManager.swift in Sources */,
 				AC616C3B28B5182500F004F4 /* DatabaseManager.swift in Sources */,
 				AC616C3328B5177400F004F4 /* SignUpViewController.swift in Sources */,
+				AC4E07F028B853AE003757EB /* PayWallHeaderView.swift in Sources */,
 				AC616C1128B4203000F004F4 /* AppDelegate.swift in Sources */,
 				AC616C3128B5175600F004F4 /* SignInViewController.swift in Sources */,
 				ACB44A4028B69A3500BAB3E0 /* User.swift in Sources */,
