@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3CF76D1A93D211467AA6D796 /* Pods_ThoughtsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8659193EFFC8F091C9907621 /* Pods_ThoughtsApp.framework */; };
+		AC4E07EC28B84845003757EB /* PayWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E07EB28B84845003757EB /* PayWallViewController.swift */; };
 		AC616C1128B4203000F004F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C1028B4203000F004F4 /* AppDelegate.swift */; };
 		AC616C1328B4203000F004F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C1228B4203000F004F4 /* SceneDelegate.swift */; };
 		AC616C1528B4203000F004F4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C1428B4203000F004F4 /* HomeViewController.swift */; };
@@ -33,6 +34,7 @@
 		05B846B72983649A1C97E514 /* Pods-ThoughtsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThoughtsApp.release.xcconfig"; path = "Target Support Files/Pods-ThoughtsApp/Pods-ThoughtsApp.release.xcconfig"; sourceTree = "<group>"; };
 		2A8B2F1C65B4E9062ACEFABB /* Pods-ThoughtsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThoughtsApp.debug.xcconfig"; path = "Target Support Files/Pods-ThoughtsApp/Pods-ThoughtsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8659193EFFC8F091C9907621 /* Pods_ThoughtsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThoughtsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC4E07EB28B84845003757EB /* PayWallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallViewController.swift; sourceTree = "<group>"; };
 		AC616C0D28B4203000F004F4 /* ThoughtsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThoughtsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC616C1028B4203000F004F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC616C1228B4203000F004F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 				05B846B72983649A1C97E514 /* Pods-ThoughtsApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC4E07EA28B847FF003757EB /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				AC4E07EB28B84845003757EB /* PayWallViewController.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		AC616C0428B4203000F004F4 = {
@@ -138,6 +148,7 @@
 		AC616C2928B5153200F004F4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AC4E07EA28B847FF003757EB /* Other */,
 				AC616C4028B51C6B00F004F4 /* Core Tabs */,
 				AC616C4128B51CC500F004F4 /* Auth */,
 				AC616C4228B51D0800F004F4 /* Posts */,
@@ -325,6 +336,7 @@
 				AC616C1328B4203000F004F4 /* SceneDelegate.swift in Sources */,
 				AC616C3528B517A100F004F4 /* ViewPostViewController.swift in Sources */,
 				AC616C3F28B5187300F004F4 /* StorageManager.swift in Sources */,
+				AC4E07EC28B84845003757EB /* PayWallViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
