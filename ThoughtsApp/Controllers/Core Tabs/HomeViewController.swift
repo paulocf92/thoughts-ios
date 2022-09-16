@@ -55,6 +55,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.frame = view.bounds
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        fetchAllPosts()
+    }
+    
     @objc private func didTapCreate() {
         let vc = CreateNewPostViewController()
         vc.title = "Create Post"
