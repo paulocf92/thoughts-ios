@@ -11,6 +11,8 @@
 		AC1D87D328BA95E60001BAA1 /* PayWallDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1D87D228BA95E60001BAA1 /* PayWallDescriptionView.swift */; };
 		AC1D87D928BAE1630001BAA1 /* StoreKitTestCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = AC1D87D828BAE1630001BAA1 /* StoreKitTestCertificate.cer */; };
 		AC22AFE128BBA949004345C5 /* SignInHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC22AFE028BBA949004345C5 /* SignInHeaderView.swift */; };
+		AC22AFE428BE7EC5004345C5 /* PostPreviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC22AFE328BE7EC5004345C5 /* PostPreviewTableViewCell.swift */; };
+		AC22AFE628BE7EF3004345C5 /* PostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC22AFE528BE7EF3004345C5 /* PostHeaderTableViewCell.swift */; };
 		AC4E07EC28B84845003757EB /* PayWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E07EB28B84845003757EB /* PayWallViewController.swift */; };
 		AC4E07EE28B84DEE003757EB /* Configuration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = AC4E07ED28B84DEE003757EB /* Configuration.storekit */; };
 		AC4E07F028B853AE003757EB /* PayWallHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E07EF28B853AE003757EB /* PayWallHeaderView.swift */; };
@@ -43,6 +45,8 @@
 		AC1D87D228BA95E60001BAA1 /* PayWallDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallDescriptionView.swift; sourceTree = "<group>"; };
 		AC1D87D828BAE1630001BAA1 /* StoreKitTestCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoreKitTestCertificate.cer; sourceTree = "<group>"; };
 		AC22AFE028BBA949004345C5 /* SignInHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInHeaderView.swift; sourceTree = "<group>"; };
+		AC22AFE328BE7EC5004345C5 /* PostPreviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPreviewTableViewCell.swift; sourceTree = "<group>"; };
+		AC22AFE528BE7EF3004345C5 /* PostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostHeaderTableViewCell.swift; sourceTree = "<group>"; };
 		AC4E07EB28B84845003757EB /* PayWallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallViewController.swift; sourceTree = "<group>"; };
 		AC4E07ED28B84DEE003757EB /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 		AC4E07EF28B853AE003757EB /* PayWallHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallHeaderView.swift; sourceTree = "<group>"; };
@@ -90,6 +94,15 @@
 				05B846B72983649A1C97E514 /* Pods-ThoughtsApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC22AFE228BE7E8D004345C5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				AC22AFE328BE7EC5004345C5 /* PostPreviewTableViewCell.swift */,
+				AC22AFE528BE7EF3004345C5 /* PostHeaderTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		AC4E07EA28B847FF003757EB /* Other */ = {
@@ -154,6 +167,7 @@
 		AC616C2828B5152600F004F4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AC22AFE228BE7E8D004345C5 /* Cells */,
 				AC616C1B28B4203100F004F4 /* LaunchScreen.storyboard */,
 				AC4E07EF28B853AE003757EB /* PayWallHeaderView.swift */,
 				AC1D87D228BA95E60001BAA1 /* PayWallDescriptionView.swift */,
@@ -349,10 +363,12 @@
 				AC616C3B28B5182500F004F4 /* DatabaseManager.swift in Sources */,
 				AC616C3328B5177400F004F4 /* SignUpViewController.swift in Sources */,
 				AC4E07F028B853AE003757EB /* PayWallHeaderView.swift in Sources */,
+				AC22AFE628BE7EF3004345C5 /* PostHeaderTableViewCell.swift in Sources */,
 				AC616C1128B4203000F004F4 /* AppDelegate.swift in Sources */,
 				AC22AFE128BBA949004345C5 /* SignInHeaderView.swift in Sources */,
 				AC616C3128B5175600F004F4 /* SignInViewController.swift in Sources */,
 				ACB44A4028B69A3500BAB3E0 /* User.swift in Sources */,
+				AC22AFE428BE7EC5004345C5 /* PostPreviewTableViewCell.swift in Sources */,
 				AC616C2D28B516D100F004F4 /* ProfileViewController.swift in Sources */,
 				AC616C3728B517C600F004F4 /* CreateNewPostViewController.swift in Sources */,
 				AC616C3928B5180100F004F4 /* IAPManager.swift in Sources */,
