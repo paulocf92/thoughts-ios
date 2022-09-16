@@ -12,6 +12,7 @@
 		AC616C1528B4203000F004F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C1428B4203000F004F4 /* ViewController.swift */; };
 		AC616C1A28B4203100F004F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC616C1928B4203100F004F4 /* Assets.xcassets */; };
 		AC616C1D28B4203100F004F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC616C1B28B4203100F004F4 /* LaunchScreen.storyboard */; };
+		AC616C2628B4221100F004F4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC616C2528B4221100F004F4 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		AC616C1928B4203100F004F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC616C1C28B4203100F004F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC616C1E28B4203100F004F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC616C2528B4221100F004F4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC616C2628B4221100F004F4 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				AC616C0F28B4203000F004F4 /* ThoughtsApp */,
 				AC616C0E28B4203000F004F4 /* Products */,
+				AC616C2428B4221100F004F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				AC616C1E28B4203100F004F4 /* Info.plist */,
 			);
 			path = ThoughtsApp;
+			sourceTree = "<group>";
+		};
+		AC616C2428B4221100F004F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC616C2528B4221100F004F4 /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +289,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ThoughtsApp/Info.plist;
+				INFOPLIST_KEY_NSMainNibFile = Main;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -305,6 +318,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ThoughtsApp/Info.plist;
+				INFOPLIST_KEY_NSMainNibFile = Main;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
