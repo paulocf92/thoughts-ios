@@ -97,6 +97,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         if let ref = profilePhotoRef {
             // Fetch image
+            print("Found photo ref: \(ref)")
         }
     }
     
@@ -191,8 +192,18 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
         StorageManager.shared.uploadUserProfilePicture(
             email: currentEmail,
             image: image
-        ) { success in
-            
+        ) { [weak self] success in
+            // Enforces the self is strong so we don't need self?
+            guard let strongSelf = self else { return }
+            if success {
+                // Update database
+                DatabaseManager.shared.updateProfilePhoto(email: strongSelf.currentEmail) { updated in
+                    guard updated else { return }
+                    DispatchQueue.main.async {
+                        strongSelf.fetchProfileData()
+                    }
+                }
+            }
         }
     }
 }
