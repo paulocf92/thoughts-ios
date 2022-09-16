@@ -9,21 +9,41 @@
 /* Begin PBXBuildFile section */
 		AC616C1128B4203000F004F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C1028B4203000F004F4 /* AppDelegate.swift */; };
 		AC616C1328B4203000F004F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C1228B4203000F004F4 /* SceneDelegate.swift */; };
-		AC616C1528B4203000F004F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C1428B4203000F004F4 /* ViewController.swift */; };
+		AC616C1528B4203000F004F4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C1428B4203000F004F4 /* HomeViewController.swift */; };
 		AC616C1A28B4203100F004F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC616C1928B4203100F004F4 /* Assets.xcassets */; };
 		AC616C1D28B4203100F004F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC616C1B28B4203100F004F4 /* LaunchScreen.storyboard */; };
 		AC616C2628B4221100F004F4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC616C2528B4221100F004F4 /* StoreKit.framework */; };
+		AC616C2D28B516D100F004F4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C2C28B516D100F004F4 /* ProfileViewController.swift */; };
+		AC616C2F28B5172C00F004F4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C2E28B5172C00F004F4 /* TabBarViewController.swift */; };
+		AC616C3128B5175600F004F4 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C3028B5175600F004F4 /* SigninViewController.swift */; };
+		AC616C3328B5177400F004F4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C3228B5177400F004F4 /* SignUpViewController.swift */; };
+		AC616C3528B517A100F004F4 /* ViewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C3428B517A100F004F4 /* ViewPostViewController.swift */; };
+		AC616C3728B517C600F004F4 /* CreateNewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C3628B517C600F004F4 /* CreateNewPostViewController.swift */; };
+		AC616C3928B5180100F004F4 /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C3828B5180100F004F4 /* IAPManager.swift */; };
+		AC616C3B28B5182500F004F4 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C3A28B5182500F004F4 /* DatabaseManager.swift */; };
+		AC616C3D28B5184900F004F4 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C3C28B5184900F004F4 /* AuthManager.swift */; };
+		AC616C3F28B5187300F004F4 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C3E28B5187300F004F4 /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC616C0D28B4203000F004F4 /* ThoughtsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThoughtsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC616C1028B4203000F004F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC616C1228B4203000F004F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC616C1428B4203000F004F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC616C1428B4203000F004F4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AC616C1928B4203100F004F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC616C1C28B4203100F004F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC616C1E28B4203100F004F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC616C2528B4221100F004F4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		AC616C2C28B516D100F004F4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		AC616C2E28B5172C00F004F4 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		AC616C3028B5175600F004F4 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		AC616C3228B5177400F004F4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		AC616C3428B517A100F004F4 /* ViewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPostViewController.swift; sourceTree = "<group>"; };
+		AC616C3628B517C600F004F4 /* CreateNewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostViewController.swift; sourceTree = "<group>"; };
+		AC616C3828B5180100F004F4 /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
+		AC616C3A28B5182500F004F4 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		AC616C3C28B5184900F004F4 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		AC616C3E28B5187300F004F4 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +114,13 @@
 		AC616C2928B5153200F004F4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AC616C1428B4203000F004F4 /* ViewController.swift */,
+				AC616C1428B4203000F004F4 /* HomeViewController.swift */,
+				AC616C2C28B516D100F004F4 /* ProfileViewController.swift */,
+				AC616C2E28B5172C00F004F4 /* TabBarViewController.swift */,
+				AC616C3028B5175600F004F4 /* SigninViewController.swift */,
+				AC616C3228B5177400F004F4 /* SignUpViewController.swift */,
+				AC616C3428B517A100F004F4 /* ViewPostViewController.swift */,
+				AC616C3628B517C600F004F4 /* CreateNewPostViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -112,6 +138,10 @@
 		AC616C2B28B515A300F004F4 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				AC616C3828B5180100F004F4 /* IAPManager.swift */,
+				AC616C3A28B5182500F004F4 /* DatabaseManager.swift */,
+				AC616C3C28B5184900F004F4 /* AuthManager.swift */,
+				AC616C3E28B5187300F004F4 /* StorageManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -186,9 +216,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC616C1528B4203000F004F4 /* ViewController.swift in Sources */,
+				AC616C1528B4203000F004F4 /* HomeViewController.swift in Sources */,
+				AC616C3D28B5184900F004F4 /* AuthManager.swift in Sources */,
+				AC616C3B28B5182500F004F4 /* DatabaseManager.swift in Sources */,
+				AC616C3328B5177400F004F4 /* SignUpViewController.swift in Sources */,
 				AC616C1128B4203000F004F4 /* AppDelegate.swift in Sources */,
+				AC616C3128B5175600F004F4 /* SigninViewController.swift in Sources */,
+				AC616C2D28B516D100F004F4 /* ProfileViewController.swift in Sources */,
+				AC616C3728B517C600F004F4 /* CreateNewPostViewController.swift in Sources */,
+				AC616C3928B5180100F004F4 /* IAPManager.swift in Sources */,
+				AC616C2F28B5172C00F004F4 /* TabBarViewController.swift in Sources */,
 				AC616C1328B4203000F004F4 /* SceneDelegate.swift in Sources */,
+				AC616C3528B517A100F004F4 /* ViewPostViewController.swift in Sources */,
+				AC616C3F28B5187300F004F4 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
