@@ -106,6 +106,10 @@ class SignUpViewController: UITabBarController {
                     guard inserted else {
                         return
                     }
+                    
+                    UserDefaults.standard.set(email, forKey: "email")
+                    UserDefaults.standard.set(name, forKey: "name")
+                    
                     DispatchQueue.main.async {
                         let vc = TabBarViewController()
                         vc.modalPresentationStyle = .fullScreen

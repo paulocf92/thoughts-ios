@@ -88,7 +88,22 @@ class SignInViewController: UITabBarController {
     }
     
     @objc func didTapSignIn() {
+        guard let email = emailField.text, !email.isEmpty,
+              let password = passwordField.text, !password.isEmpty else {
+            return
+        }
         
+        AuthManager.shared.signIn(email: email, password: password) { [weak self] success in
+            guard success else {
+                return
+            }
+            DispatchQueue.main.async {
+                UserDefaults.standard.set(email, forKey: "email")
+                let vc = TabBarViewController()
+                vc.modalPresentationStyle = .fullScreen
+                self?.present(vc, animated: true)
+            }
+        }
     }
     
     @objc func didTapCreateAccount() {
