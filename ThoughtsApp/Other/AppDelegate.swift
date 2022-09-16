@@ -20,6 +20,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Purchases.configure(withAPIKey: "appl_IlDwFWpsGBCUoxlYmGPJTktNJao")
         
+        IAPManager.shared.fetchPackages { package in
+            guard let package = package else {
+                return
+            }
+            
+            print("Got package!")
+            IAPManager.shared.subscribe(package: package)
+        }
+        
         return true
     }
 
