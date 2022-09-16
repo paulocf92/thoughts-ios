@@ -17,6 +17,8 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     // List of posts
     
+    private var user: User?
+    
     private let tableView: UITableView = {
         let tableView = UITableView()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
@@ -39,6 +41,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         view.backgroundColor = .systemBackground
         setUpSignOutButton()
         setUpTable()
+        title = "Profile"
     }
     
     override func viewDidLayoutSubviews() {
@@ -51,9 +54,13 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         tableView.delegate = self
         tableView.dataSource = self
         setUpTableHeader()
+        fetchProfileData()
     }
     
-    private func setUpTableHeader() {
+    private func setUpTableHeader(
+        profilePhotoRef: String? = nil,
+        name: String? = nil
+    ) {
         let headerView = UIView(frame: CGRect(x: 0, y: 0, width: view.width, height: view.width/1.5))
         headerView.backgroundColor = .systemBlue
         headerView.clipsToBounds = true
@@ -72,11 +79,36 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
         headerView.addSubview(profilePhoto)
         
         // Email
-        let emailLabel = UILabel(frame: CGRect(x: 20, y: profilePhoto.bottom+30, width: view.width-40, height: 100))
+        let emailLabel = UILabel(frame: CGRect(x: 20, y: profilePhoto.bottom+10, width: view.width-40, height: 100))
         headerView.addSubview(emailLabel)
         emailLabel.text = currentEmail
         emailLabel.textAlignment = .center
+        emailLabel.textColor = .white
         emailLabel.font = .systemFont(ofSize: 25, weight: .bold)
+        
+        if let name = name {
+            title = name
+        }
+        
+        if let ref = profilePhotoRef {
+            // Fetch image
+        }
+    }
+    
+    private func fetchProfileData() {
+        DatabaseManager.shared.getUser(email: currentEmail) { [weak self] user in
+            guard let user = user else {
+                return
+            }
+            self?.user = user
+            
+            DispatchQueue.main.async {
+                self?.setUpTableHeader(
+                    profilePhotoRef: user.profilePictureRef,
+                    name: user.name
+                )
+            }
+        }
     }
     
     private func setUpSignOutButton() {
