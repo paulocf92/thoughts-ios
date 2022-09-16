@@ -15,7 +15,7 @@
 		AC616C2628B4221100F004F4 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC616C2528B4221100F004F4 /* StoreKit.framework */; };
 		AC616C2D28B516D100F004F4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C2C28B516D100F004F4 /* ProfileViewController.swift */; };
 		AC616C2F28B5172C00F004F4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C2E28B5172C00F004F4 /* TabBarViewController.swift */; };
-		AC616C3128B5175600F004F4 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C3028B5175600F004F4 /* SigninViewController.swift */; };
+		AC616C3128B5175600F004F4 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C3028B5175600F004F4 /* SignInViewController.swift */; };
 		AC616C3328B5177400F004F4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C3228B5177400F004F4 /* SignUpViewController.swift */; };
 		AC616C3528B517A100F004F4 /* ViewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C3428B517A100F004F4 /* ViewPostViewController.swift */; };
 		AC616C3728B517C600F004F4 /* CreateNewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC616C3628B517C600F004F4 /* CreateNewPostViewController.swift */; };
@@ -36,7 +36,7 @@
 		AC616C2528B4221100F004F4 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		AC616C2C28B516D100F004F4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		AC616C2E28B5172C00F004F4 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		AC616C3028B5175600F004F4 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
+		AC616C3028B5175600F004F4 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		AC616C3228B5177400F004F4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		AC616C3428B517A100F004F4 /* ViewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPostViewController.swift; sourceTree = "<group>"; };
 		AC616C3628B517C600F004F4 /* CreateNewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPostViewController.swift; sourceTree = "<group>"; };
@@ -114,13 +114,9 @@
 		AC616C2928B5153200F004F4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AC616C1428B4203000F004F4 /* HomeViewController.swift */,
-				AC616C2C28B516D100F004F4 /* ProfileViewController.swift */,
-				AC616C2E28B5172C00F004F4 /* TabBarViewController.swift */,
-				AC616C3028B5175600F004F4 /* SigninViewController.swift */,
-				AC616C3228B5177400F004F4 /* SignUpViewController.swift */,
-				AC616C3428B517A100F004F4 /* ViewPostViewController.swift */,
-				AC616C3628B517C600F004F4 /* CreateNewPostViewController.swift */,
+				AC616C4028B51C6B00F004F4 /* Core Tabs */,
+				AC616C4128B51CC500F004F4 /* Auth */,
+				AC616C4228B51D0800F004F4 /* Posts */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -144,6 +140,34 @@
 				AC616C3E28B5187300F004F4 /* StorageManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		AC616C4028B51C6B00F004F4 /* Core Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				AC616C1428B4203000F004F4 /* HomeViewController.swift */,
+				AC616C2C28B516D100F004F4 /* ProfileViewController.swift */,
+				AC616C2E28B5172C00F004F4 /* TabBarViewController.swift */,
+			);
+			path = "Core Tabs";
+			sourceTree = "<group>";
+		};
+		AC616C4128B51CC500F004F4 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				AC616C3028B5175600F004F4 /* SignInViewController.swift */,
+				AC616C3228B5177400F004F4 /* SignUpViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		AC616C4228B51D0800F004F4 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				AC616C3428B517A100F004F4 /* ViewPostViewController.swift */,
+				AC616C3628B517C600F004F4 /* CreateNewPostViewController.swift */,
+			);
+			path = Posts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,7 +245,7 @@
 				AC616C3B28B5182500F004F4 /* DatabaseManager.swift in Sources */,
 				AC616C3328B5177400F004F4 /* SignUpViewController.swift in Sources */,
 				AC616C1128B4203000F004F4 /* AppDelegate.swift in Sources */,
-				AC616C3128B5175600F004F4 /* SigninViewController.swift in Sources */,
+				AC616C3128B5175600F004F4 /* SignInViewController.swift in Sources */,
 				AC616C2D28B516D100F004F4 /* ProfileViewController.swift in Sources */,
 				AC616C3728B517C600F004F4 /* CreateNewPostViewController.swift in Sources */,
 				AC616C3928B5180100F004F4 /* IAPManager.swift in Sources */,
