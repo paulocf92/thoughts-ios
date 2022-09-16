@@ -30,6 +30,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         view.addSubview(composeButton)
+        composeButton.addTarget(self, action: #selector(didTapCreate), for: .touchUpInside)
     }
     
     override func viewDidLayoutSubviews() {
@@ -41,6 +42,12 @@ class HomeViewController: UIViewController {
             height: 80
         )
     }
-
+    
+    @objc private func didTapCreate() {
+        let vc = CreateNewPostViewController()
+        vc.title = "Create Post"
+        let navVC = UINavigationController(rootViewController: vc)
+        present(navVC, animated: true)
+    }
 }
 
