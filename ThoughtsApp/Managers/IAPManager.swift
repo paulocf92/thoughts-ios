@@ -9,12 +9,12 @@ import Foundation
 import Purchases
 
 final class IAPManager {
-    private let shared = IAPManager()
+    static let shared = IAPManager()
     
     private init() {}
     
-    func isPremium() {
-        
+    func isPremium() -> Bool {
+        return false
     }
     
     func subscribe() {

@@ -13,6 +13,13 @@ class SignInViewController: UITabBarController {
         super.viewDidLoad()
         title = "Sign In"
         view.backgroundColor = .systemBackground
+        
+        DispatchQueue.main.asyncAfter(deadline: .now()+3) {
+            if !IAPManager.shared.isPremium() {
+                let vc = PayWallViewController()
+                self.present(vc, animated: true, completion: nil)
+            }
+        }
     }
 
 }
