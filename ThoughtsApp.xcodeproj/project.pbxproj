@@ -117,12 +117,13 @@
 		AC616C0F28B4203000F004F4 /* ThoughtsApp */ = {
 			isa = PBXGroup;
 			children = (
-				AC616C2728B5151C00F004F4 /* Models */,
-				AC616C1E28B4203100F004F4 /* Info.plist */,
 				AC616C2B28B515A300F004F4 /* Managers */,
 				AC616C2A28B5154400F004F4 /* Other */,
 				AC616C2928B5153200F004F4 /* Controllers */,
 				AC616C2828B5152600F004F4 /* Views */,
+				AC616C2728B5151C00F004F4 /* Models */,
+				AC616C1E28B4203100F004F4 /* Info.plist */,
+				AC4E07ED28B84DEE003757EB /* Configuration.storekit */,
 			);
 			path = ThoughtsApp;
 			sourceTree = "<group>";
@@ -194,7 +195,6 @@
 			children = (
 				AC616C1428B4203000F004F4 /* HomeViewController.swift */,
 				AC616C2C28B516D100F004F4 /* ProfileViewController.swift */,
-				AC4E07ED28B84DEE003757EB /* Configuration.storekit */,
 				AC616C2E28B5172C00F004F4 /* TabBarViewController.swift */,
 			);
 			path = "Core Tabs";
