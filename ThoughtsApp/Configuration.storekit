@@ -36,9 +36,9 @@
               "locale" : "en_US"
             }
           ],
-          "productID" : "com.paulofilho.ThoughtsApp.Premium",
+          "productID" : "com.paulofilho.ThoughtsApp.premium",
           "recurringSubscriptionPeriod" : "P1M",
-          "referenceName" : "Premium Monthly",
+          "referenceName" : "Premium",
           "subscriptionGroupID" : "4731D1A5",
           "type" : "RecurringSubscription"
         }

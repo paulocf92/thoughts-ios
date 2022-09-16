@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3CF76D1A93D211467AA6D796 /* Pods_ThoughtsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8659193EFFC8F091C9907621 /* Pods_ThoughtsApp.framework */; };
 		AC1D87D328BA95E60001BAA1 /* PayWallDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1D87D228BA95E60001BAA1 /* PayWallDescriptionView.swift */; };
-		AC1D87D528BAC4BE0001BAA1 /* StoreKitTestCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = AC1D87D428BAC4BE0001BAA1 /* StoreKitTestCertificate.cer */; };
+		AC1D87D928BAE1630001BAA1 /* StoreKitTestCertificate.cer in Resources */ = {isa = PBXBuildFile; fileRef = AC1D87D828BAE1630001BAA1 /* StoreKitTestCertificate.cer */; };
 		AC4E07EC28B84845003757EB /* PayWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E07EB28B84845003757EB /* PayWallViewController.swift */; };
 		AC4E07EE28B84DEE003757EB /* Configuration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = AC4E07ED28B84DEE003757EB /* Configuration.storekit */; };
 		AC4E07F028B853AE003757EB /* PayWallHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E07EF28B853AE003757EB /* PayWallHeaderView.swift */; };
@@ -40,7 +40,7 @@
 		2A8B2F1C65B4E9062ACEFABB /* Pods-ThoughtsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThoughtsApp.debug.xcconfig"; path = "Target Support Files/Pods-ThoughtsApp/Pods-ThoughtsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8659193EFFC8F091C9907621 /* Pods_ThoughtsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThoughtsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC1D87D228BA95E60001BAA1 /* PayWallDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallDescriptionView.swift; sourceTree = "<group>"; };
-		AC1D87D428BAC4BE0001BAA1 /* StoreKitTestCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoreKitTestCertificate.cer; sourceTree = "<group>"; };
+		AC1D87D828BAE1630001BAA1 /* StoreKitTestCertificate.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = StoreKitTestCertificate.cer; sourceTree = "<group>"; };
 		AC4E07EB28B84845003757EB /* PayWallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallViewController.swift; sourceTree = "<group>"; };
 		AC4E07ED28B84DEE003757EB /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 		AC4E07EF28B853AE003757EB /* PayWallHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallHeaderView.swift; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 				AC616C2728B5151C00F004F4 /* Models */,
 				AC616C1E28B4203100F004F4 /* Info.plist */,
 				AC4E07ED28B84DEE003757EB /* Configuration.storekit */,
-				AC1D87D428BAC4BE0001BAA1 /* StoreKitTestCertificate.cer */,
+				AC1D87D828BAE1630001BAA1 /* StoreKitTestCertificate.cer */,
 			);
 			path = ThoughtsApp;
 			sourceTree = "<group>";
@@ -281,7 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC1D87D528BAC4BE0001BAA1 /* StoreKitTestCertificate.cer in Resources */,
+				AC1D87D928BAE1630001BAA1 /* StoreKitTestCertificate.cer in Resources */,
 				AC616C1D28B4203100F004F4 /* LaunchScreen.storyboard in Resources */,
 				AC4E07EE28B84DEE003757EB /* Configuration.storekit in Resources */,
 				AC616C1A28B4203100F004F4 /* Assets.xcassets in Resources */,
