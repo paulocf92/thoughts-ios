@@ -45,6 +45,10 @@
       ]
     }
   ],
+  "subscriptionOffersKeyPair" : {
+    "id" : "EEA92972",
+    "privateKey" : "MIGTAgEAMBMGByqGSM49AgEGCCqGSM49AwEHBHkwdwIBAQQgT1EfQybSQBVvo+U9hE89WhaEG7XrALoqLY31fY8CDzOgCgYIKoZIzj0DAQehRANCAAQuPC3HkGHlYzQP/6H8WRbpSEP0BJIqJiK+SCHeKbTQJW0gwUsedLht8DPjNraNA4eFa+r02m/Jm5Wi/8+Zbyfs"
+  },
   "version" : {
     "major" : 1,
     "minor" : 2
