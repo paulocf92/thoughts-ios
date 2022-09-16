@@ -35,6 +35,16 @@ class PayWallViewController: UIViewController {
     }()
     
     // Terms of Service
+    private let termsView: UITextView = {
+        let textView = UITextView()
+        textView.isEditable = false
+        textView.textAlignment = .center
+        textView.textColor = .secondaryLabel
+        textView.font = .systemFont(ofSize: 14)
+        textView.text = "This is an auto-renewable Subscription. It will be charged to your iTunes account before each pay period. You can cancel anytime by going into your Settings > Subscriptions. Restore purchases if previously subscribed."
+        
+        return textView
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +53,7 @@ class PayWallViewController: UIViewController {
         view.addSubview(header)
         view.addSubview(buyButton)
         view.addSubview(restoreButton)
+        view.addSubview(termsView)
         setUpCloseButton()
         setUpButtons()
     }
@@ -54,6 +65,27 @@ class PayWallViewController: UIViewController {
             y: view.safeAreaInsets.top,
             width: view.width,
             height: view.height/3.2
+        )
+        
+        termsView.frame = CGRect(
+            x: 10,
+            y: view.height - 100,
+            width: view.width - 20,
+            height: 100
+        )
+        
+        restoreButton.frame = CGRect(
+            x: 25,
+            y: termsView.top - 70,
+            width: view.width - 50,
+            height: 50
+        )
+        
+        buyButton.frame = CGRect(
+            x: 25,
+            y: restoreButton.top - 60,
+            width: view.width - 50,
+            height: 50
         )
     }
     
