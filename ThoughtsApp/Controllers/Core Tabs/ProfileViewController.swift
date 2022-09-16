@@ -7,12 +7,59 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    // Profile Photo
+    
+    // Full Name
+    
+    // Email
+    
+    // List of posts
+    
+    private let tableView: UITableView = {
+        let tableView = UITableView()
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        return tableView
+    }()
+    
+    let currentEmail: String
+    
+    init(currentEmail: String) {
+        self.currentEmail = currentEmail
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Sign Out", style: .done, target: self, action: #selector(didTapSignOut))
+        setUpSignOutButton()
+        setUpTable()
+        title = currentEmail
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tableView.frame = view.bounds
+    }
+    
+    private func setUpTable() {
+        view.addSubview(tableView)
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
+    
+    private func setUpSignOutButton() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            title: "Sign Out",
+            style: .done,
+            target: self,
+            action: #selector(didTapSignOut)
+        )
     }
     
     @objc private func didTapSignOut() {
@@ -39,5 +86,17 @@ class ProfileViewController: UIViewController {
         }))
         present(sheet, animated: true)
     }
-
+    
+    // Table View
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = "Blog post goes here!"
+        
+        return cell
+    }
 }
