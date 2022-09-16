@@ -28,6 +28,7 @@ class CreateNewPostViewController: UITabBarController {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         imageView.isUserInteractionEnabled = true
+        imageView.clipsToBounds = true
         imageView.image = UIImage(systemName: "photo")
         imageView.backgroundColor = .tertiarySystemBackground
         
@@ -52,6 +53,9 @@ class CreateNewPostViewController: UITabBarController {
         view.addSubview(headerImageView)
         view.addSubview(textView)
         view.addSubview(titleField)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(didTapHeader))
+        headerImageView.addGestureRecognizer(tap)
+        
         configureButton()
     }
     
@@ -63,6 +67,14 @@ class CreateNewPostViewController: UITabBarController {
         // 210 = 50+160
         // view.safeAreaInsets.top = remaining vertical space
         textView.frame = CGRect(x: 10, y: headerImageView.bottom+10, width: view.width-20, height: view.height-210-view.safeAreaInsets.top)
+    }
+    
+    @objc private func didTapHeader() {
+        let picker = UIImagePickerController()
+        picker.sourceType = .photoLibrary
+        picker.delegate = self
+        picker.allowsEditing = true
+        present(picker, animated: true)
     }
     
     private func configureButton() {
@@ -89,21 +101,77 @@ class CreateNewPostViewController: UITabBarController {
         // Check data and post
         guard let title = titleField.text,
               let body = textView.text,
-              let image = selectedHeaderImage,
+              let headerImage = selectedHeaderImage,
+              let email = UserDefaults.standard.string(forKey: "email"),
               !title.trimmingCharacters(in: .whitespaces).isEmpty,
               !body.trimmingCharacters(in: .whitespaces).isEmpty else {
+            
+            let alert = UIAlertController(title: "Enter Post Details",
+                                          message: "Please enter title, body, and select an image to continue.",
+                                          preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+            present(alert, animated: true)
             return
         }
         
-        // Upload header image
-        // Insert post into DB
+        let newPostId = UUID().uuidString
         
-        let post = BlogPost(
-            identifier: UUID().uuidString,
-            title: title,
-            timestamp: Date().timeIntervalSince1970,
-            headerImageUrl: nil,
-            text: body
-        )
+        // Upload header image
+        StorageManager.shared.uploadBlogHeaderImage(
+            email: email,
+            image: headerImage,
+            postId: newPostId
+        ) { [weak self] success in
+            guard success else {
+                return
+            }
+            
+            StorageManager.shared.downloadUlForPostHeader(
+                email: email,
+                postId: newPostId
+            ) { url in
+                guard let headerUrl = url else {
+                    print("Failed to upload url for header")
+                    return
+                }
+                
+                // Insert post into DB
+                
+                let post = BlogPost(
+                    identifier: newPostId,
+                    title: title,
+                    timestamp: Date().timeIntervalSince1970,
+                    headerImageUrl: headerUrl,
+                    text: body
+                )
+                
+                DatabaseManager.shared.insert(blogPost: post, email: email) { [weak self] posted in
+                    guard posted else {
+                        print("Failed to post new Blog Article")
+                        return
+                    }
+                    DispatchQueue.main.async {
+                        self?.didTapCancel()
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+extension CreateNewPostViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true, completion: nil)
+        guard let image = info[.editedImage] as? UIImage else {
+            return
+        }
+        
+        selectedHeaderImage = image
+        headerImageView.image = image
     }
 }
